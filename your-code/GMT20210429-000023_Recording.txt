@@ -1,0 +1,55 @@
+00:40:26	Zahid Sanchez:	Si se acuerdan que algo así vimos en numpy que había funciones que no transformaban nuestros arreglos?
+00:40:41	Cristina Hermar:	Sí
+00:40:41	Zahid Sanchez:	Lo mismo pasa con rename
+00:41:09	Zahid Sanchez:	Y el inplace=True nos ayuda a que sí los modifique, ese parámetro será recurrente cuando trabajemos con pandas
+00:42:44	Luis Ponce:	Se le escapó la ninfa
+00:46:27	Julian Ramirez:	df.rename(columns = { "A" :"columna_1", "B":"columna_2",                         "C":"columna_3", "D": "columna_4"},         inplace=True)df
+00:48:09	Zahid Sanchez:	Se cayo mi internet?
+00:48:16	Carlos Covarrubias:	no
+00:48:33	Zahid Sanchez:	Ya volvi
+00:49:46	Julian Ramirez:	company = ["Apple", "Citigroup", "General_Electric",           "Pfizer", "Boing_Co", "AT&t", "Ford"]price = [119.04, 43.19, 7.29, 37.95, 167.35, 27.33, 7.67]
+00:51:34	Miguel Angel Diaz Ferrusca:	Los boing cotizan en bolsa? jaja
+00:51:48	Cristina Hermar:	jajaja
+01:03:47	Julian Ramirez:	materiales = {"4135001": [1373.875, 134.075, 32.25],             "4135002": [1400, 136.6, 40.666],             "4135003": [1920.25, 188.25, 80.25],              "4135004": [1881.2, 184.38, 81]}
+01:11:16	Luis Ponce:	Puedes pasar los número así 100_000 para poder tener un diferenciador, sólo que sí lo quieres dentro de tu DF separado sí tienes que darle un string format
+01:12:40	Carlos Covarrubias:	Donde estuvieron estas clases cuando sufría en excel
+01:12:55	Cristina Hermar:	jajajajajaja
+01:15:34	Zahid Sanchez:	Ahhh ya entendí a que se refería Ponc hace rato, ese es un muy buen truco a la hora de usar números para agregar claridad, trucazo 10/10
+01:15:57	Cristina Hermar:	Yo sigo sin entender jaja
+01:15:59	Julian Ramirez:	https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html
+01:16:46	Zahid Sanchez:	Si, por ejemplo si quisieras escribira = 1000000000es más claro a=1_000_000_000
+01:16:56	Zahid Sanchez:	Y python te deja hacerlo así
+01:17:01	Zahid Sanchez:	Y toma el mismo valor
+01:17:05	Zahid Sanchez:	Pero ayuda a la lectura
+01:17:22	José Juan:	wooooohooooo
+01:17:23	Zahid Sanchez:	Los guiones los ignora
+01:17:30	Cristina Hermar:	Oooh eso esta genial
+01:30:03	Luis Ponce:	ya regresé
+01:30:04	Luis Ponce:	otra vez
+01:31:15	Luis Ponce:	ya todos tienen los archivos?
+01:33:48	Zahid Sanchez:	Soy yo el único que ve 2 Ponc o sí nos están atacando?
+01:34:19	Luis Ponce:	Estoy en el cel también por si se va la luz
+01:34:43	José Juan:	nos puedes pasar la linea de código porfa Julian
+01:34:56	José Juan:	no me esta cargando, quiero ver en que me equivoque
+01:35:16	Luis Ponce:	cuál línea?
+01:36:52	Zahid Sanchez:	D:
+01:37:09	Zahid Sanchez:	Sabía que llegaría el día de la rebelión de los Ponc
+01:38:53	Julian Ramirez:	data = pd.read_csv("C:/Users/Julian/Documents/IronHack/Week 4/pandas/vehicles.csv",                  dtype={"Model":str,"Year":np.int32},                  nrows= 10000,                  usecols= ["Model","Year","Transmission"]                  )data.head(4)
+01:45:49	Zahid Sanchez:	Es jaker
+01:47:26	Joaquin Mena:	Yo tampoco
+01:47:44	Carlos Covarrubias:	Missing optional dependency 'xlrd'. Install xlrd >= 1.0.0 for Excel support Use pip or conda to install xlrd.
+01:48:00	Joaquin Mena:	Ah, no ya… no cargaba
+01:51:19	Sofía:	data = pd.read_csv("C:/Users/Sofía Aceves Osuna/ironhack/Clases/drive-download-20210429T000604Z-001/vehicles.xlsx")data.head(1)
+01:51:53	Luis Ponce:	manda el error
+01:52:07	Luis Ponce:	ah ya
+01:52:17	Luis Ponce:	pd.read_excel()
+01:52:24	Luis Ponce:	no csv
+01:54:03	Zahid Sanchez:	Alguien más quedó con algún problema de instalación?
+03:23:38	Sofía:	https://docs.google.com/spreadsheets/d/1ZRLnS82bs0vJKQLkUSDM9N-7tDbHP5pKi13_tLRBItc/edit?usp=sharing
+03:25:19	Agustín Sánchez:	No se si soy yo
+03:25:30	Agustín Sánchez:	Pero todos pueden editar la encuesta
+03:26:23	Zahid Sanchez:	La encuesta es en su hoja
+03:26:28	Zahid Sanchez:	De cada quien
+03:26:33	Zahid Sanchez:	Igual por si no lo habían notado
+03:26:39	Sofía:	Gracias, justo
+03:26:42	Sofía:	en su hoja suya de cada quien
